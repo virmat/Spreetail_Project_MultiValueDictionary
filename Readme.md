@@ -131,9 +131,10 @@ Testing Examples:
 
 Additional Features added:
 
-    1. Developer is provided with the flexibility to implement the functionalities implementation in a different way in the future without affecting the other program. This is achieved by addition of an interface using which we can implement multiple implementations.
-    2. User can choose to exit the program gracefully without affecting the existing program.
-    3. Input commands are case in-sensitive therefore user is not bound to follow any specific case in input pattern.
+    1. Operations is provided as an Interface. This enables the dictionary to be implemented by various backend systems. 
+       Backend implementation of the operations currently uses in-memory system. In future, developers can implement file system implementation, database implementation etc, and use the same interface to be used by the program.
+    2. Input commands are case in-sensitive therefore user is not bound to follow any specific case in input pattern.
+    3. User can choose to exit the program gracefully after all desired actions are completed.
 
 ----------------------------
 
